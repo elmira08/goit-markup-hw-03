@@ -69,9 +69,11 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-bar-item{
-     padding-top: 24px;
+    padding-top: 24px;
     padding-bottom: 24px;
 }
 .nav-bar-item>a:hover, .nav-bar-item>a:focus, .address-item>a:hover, .address-item>a:focus {
