@@ -15,24 +15,25 @@ ul {
 button:hover, button:focus{
     cursor: pointer;
 }
+img{
+    display: block;
+}
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
 .section{
     padding-top: 120px;
 }
 .container{
-    width: 1158px;
-    border-bottom:1px solid #E7E9FC;
+    width: 1128px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .nav-bar{
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
 .logo{
     font-family:"Raleway", sans-serif;
@@ -43,6 +44,7 @@ button:hover, button:focus{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-right: 15px;
+    margin-right: 76px;
 }
 .logo>span{
     color: #2e2f42;
@@ -50,6 +52,8 @@ button:hover, button:focus{
 .nav-bar-list{
     display: flex;
     gap: 40px;
+     padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-bar-list a{
     font-weight: 500;
@@ -78,18 +82,19 @@ color: #404bbf;
 
 .hero {
     background-color: #2e2f42;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     
     
 }
-h1{
+.h-one{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
 }
 .hero-button{
     background-color: #4d5ae5;
@@ -101,22 +106,17 @@ h1{
     font-family: "Roboto", sans-serif;
     display: block;
     margin-left: auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
-    border: 0;
+    border: none;
     border-radius: 4px;
     margin-right: auto;
+    cursor: pointer;
 }
-.hero>button:hover, .hero>button:focus{
+.hero-button:hover, .hero-button:focus{
     background-color: #404bbf;
 }
-.container-main-goals{
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.main-goals{
     padding-bottom: 120px;
     padding-top: 120px;
 }
@@ -128,17 +128,19 @@ h1{
 
 .main-goals-list-item p{
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    width: calc((100% - 72px) / 4);
 }
-.main-goals-list-item h3{
+.main-goals-list-names{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .team {
     background-color: #F4F4FD;
@@ -146,16 +148,8 @@ h1{
     padding-bottom: 120px;
     padding-top: 120px;
 }
-.team-container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.team-list-item{
-    background-color: #FFFFFF;
-}
+
+
 .team-title{
     font-weight: 500;      
     font-size: 36px;
@@ -164,6 +158,8 @@ h1{
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+    
 
 }
 
@@ -177,11 +173,20 @@ h1{
     gap: 24px;
     
 }
+.team-list-item{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.team-item-container{
+    padding: 32px 0;
+}
 .team-member-name{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .team-job{
     font-weight: 400;
@@ -189,17 +194,16 @@ h1{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 .portfolio{
     padding-top: 120px;
     padding-bottom: 120px;
 }
 .portfolio-container{
-    width: 1128px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-h2{
     font-weight: 700;
@@ -209,6 +213,7 @@ h1{
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .portfolio-list{
     display: flex;
@@ -225,6 +230,7 @@ h1{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .portfolio-list-item{
     border: 1px solid #E7E9FC;
@@ -236,16 +242,11 @@ h1{
     letter-spacing: 0.02em;
     color: #434455;
 }
-footer{
+.footer{
     background-color:#2e2f42;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 100px 0;
 }
-.footer-container{
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .footer-text{
     font-weight: 400;
     font-size: 16px;

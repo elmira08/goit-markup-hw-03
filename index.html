@@ -10,9 +10,10 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.com/libraries/modern-normalize">
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container">
                 <nav class="nav-bar">
                 <a href="./index.html" class="logo">Web<span>Studio</span></a>
@@ -33,13 +34,15 @@
         </header>
         <main>
             <section class="hero">
-                <h1 class="h-one">Effective Solutions
-                for Your Business</h1>
+                <div class="container">
+                    <h1 class="h-one">Effective Solutions
+                    for Your Business</h1>
                 <button type="button" class="hero-button">Order Service</button>
+                </div>
+                
             </section>
-            
             <section class="main-goals">
-                <div class="container-main-goals">
+                <div class="container">
                 <ul class="main-goals-list">
                     <li class="main-goals-list-item">
                         <h3 class="main-goal-names">Strategy</h3>
@@ -63,72 +66,92 @@
                 
             </section>
             <section class="team">
-                <div class="team-container">
+                <div class="container">
                     <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
                         <img src="./images/img.jpg" alt="Mark Guerrero" width="264" height="260">
-                        <h3 class="team-member-name">Mark Guerrero</h3>
-                        <p class="team-job">Product Designer</p>
+                        <div class="team-item-container">
+                            <h3 class="team-member-name">Mark Guerrero</h3>
+                            <p class="team-job">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img src="./images/img1.jpg" alt="Tom Ford" width="264" height="260">
-                        <h3 class="team-member-name">Tom Ford</h3>
-                        <p class="team-job">Frontend Developer</p>
+                        <div class="team-item-container">
+                            <h3 class="team-member-name">Tom Ford</h3>
+                            <p class="team-job">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img src="./images/img2.jpg" alt="Camila Garcia" width="264" height="260">
-                        <h3 class="team-member-name">Camila Garcia</h3>
-                        <p class="team-job">Marketing</p>
+                        <div class="team-item-container">
+                            <h3 class="team-member-name">Camila Garcia</h3>
+                            <p class="team-job">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-list-item">
                         <img src="./images/img3.jpg" alt="Daniel Wilson" width="264" height="260">
-                        <h3 class="team-member-name">Daniel Wilson</h3>
-                        <p class="team-job">UI Designer</p>
+                        <div class="team-item-container">
+                            <h3 class="team-member-name">Daniel Wilson</h3>
+                            <p class="team-job">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
                 </div>
             </section>
             <section class="portfolio">
-                <div class="portfolio-container">
+                <div class="container">
                     <h2 class="portfolio-h2">Our Portfolio</h2>
                     <ul class="portfolio-list">
                         <li class="portfolio-list-item">
                             <img src="./images/bakingapp.jpg" alt="bakig-app-img" width="360" height="300">
+                         <div class="portfolio-container">
                             <h3 class="portfolio-title">Banking App</h3>
                             <p class="portfolio-p">App</p>
+                        </div>
                         </li>
                         <li class="portfolio-list-item">
                             <img src="./images/cashlesspayment.jpg" alt="cashless payment" width="360" height="300">
+                         <div class="portfolio-container">
                             <h3 class="portfolio-title">Cashless Payment</h3>
                             <p class="portfolio-p">Marketing</p>
+                        </div>
                         </li>
                         <li class="portfolio-list-item">
                             <img src="./images/MeditationApp.jpg" alt="Meditation App" width="360" height="300">
+                         <div class="portfolio-container">
                             <h3 class="portfolio-title">Meditation App</h3>
                             <p class="portfolio-p">App</p>
+                        </div>
                         </li>
                         <li class="portfolio-list-item">
                             <img src="./images/Taxi-Service.jpg" alt="Taxi Servic" width="360" height="300">
+                         <div class="portfolio-container">
                             <h3 class="portfolio-title">Taxi Service</h3>
                             <p class="portfolio-p">Marketing</p>
+                        </div>
                         </li>
                         <li class="portfolio-list-item">
                             <img src="./images/screen.jpg" alt="Screen Illustrations" width="360" height="300">
+                         <div class="portfolio-container">
                             <h3 class="portfolio-title">Screen Illustrations</h3>
                             <p class="portfolio-p">Design</p>
+                        </div>
                         </li>
                         <li class="portfolio-list-item">
                             <img src="./images/OnlineCourses.jpg" alt="Online Courses" width="360" height="300">
+                         <div class="portfolio-container">
                             <h3 class="portfolio-title">Online Courses</h3>
                             <p class="portfolio-p">Marketing</p>
+                        </div>
                         </li>
                     </ul>
                 </div> 
             </section>
         </main>
         <footer class="footer">
-            <div class="footer-container">
+            <div class="container">
                 <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth
                 solutions.</p>
