@@ -35,6 +35,10 @@ img{
     display: flex;
     width: 1158px;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .nav-bar{
     display: flex;
@@ -128,7 +132,16 @@ color: #404bbf;
     padding-top: 120px;
 }
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .main-goals-list{
     display: flex;
@@ -137,7 +150,7 @@ color: #404bbf;
 .main-goals-list-item{
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
-.main-goals-names{
+.main-goal-names{
     margin-bottom: 8px;
 }
 .team {
